@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education -register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header Section Start -->
+<header class="header">
+    <section class="flex">
+        <a href="home.html" class="logo">education</a>
+        
+        <form action="" method="post" class="search-form">
+            <input type="text" name="search_box" placeholder="Search courses..." 
+                   required maxlength="100" id="search-box">
+            <button type="submit" class="fas fa-search" aria-label="Search"></button>
+        </form>
+        
+        <div class="icons">
+            <button id="menu-btn" class="fas fa-bars" aria-label="Menu"></button>
+            <button id="search-btn" class="fas fa-search" aria-label="Open Search"></button>
+            <button id="user-btn" class="fas fa-user" aria-label="User Account"></button>
+            <button id="toggle-btn" class="fas fa-sun" aria-label="Toggle Dark Mode"></button>
+        </div>
+        <div class="profile">
+            <img src="image/pic-1.jpg" alt="wait1">
+            <h3>ahmed</h3>
+            <span>student</span>
+            <a href="profile.html" class="btn">view profile</a>
+            <div class="flex-btn">
+                <a href="login.htm" class="option-btn">login</a>
+                <a href="register.html" class="option-btn">register</a>
+            </div>
+        </div>
+    </section>
+</header>
+<!-- Header Section End -->
+
+<!--side bar section start-->
+
+<div class="side-bar">
+
+    <div class="close-side-bar">
+        <i class="fas fa-times"></i>
+    </div>
+
+    <div class="profile">
+    <img src="image/pic-1.jpg" alt="wait1">
+    <h3>ahmed</h3>
+    <span>student</span>
+    <a href="profile.html" class="btn">view profile</a>
+    </div>
+
+    <nav class="navbar">
+        <a href="home.html"><i class="fas fa-home"></i><span>home</span></a>
+        <a href="about.html"><i class="fas fa-question"></i><span>about us</span></a>
+        <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
+        <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>teachers</span></a>
+        <a href="contact.html"><i class="fas fa-headset"></i><span>contact us</span></a>
+    </nav>
+
+
+</div>
+
+
+<!--side bar section end-->
+<!--registe section start-->
+<section class="form-container">
+    <form action="" method="post" enctype="multipart/form-data">
+        <h3>register new</h3>
+        <p>your name<span>*</span></p>
+        <input type="text" name="name" placeholder="enter your namd" maxlength="100" required class="box">
+        
+        <p>your email<span>*</span></p>
+        <input type="email" name="email" placeholder="enter your email" maxlength="100" required class="box">
+        
+        <p>your password<span>*</span></p>
+        <input type="password" name="new_pass" placeholder="enter your new password" maxlength="50" required class="box">
+        
+        <p>confirm password<span>*</span></p>
+        <input type="password" name="c_pass" placeholder="confirm your new password" maxlength="50" readonly class="box">
+        
+        <p>select pic<span>*</span></p>
+        <input type="file" name="image" accept="image/*" required class="box">
+        
+        <input type="submit" value="register now" name="submit" class="btn">
+    </form>
+</section>
+<!--registe section end-->
+
+<!--footer section start-->
+
+
+
+<div class="footer">
+
+    &copy; copyright @2022 by <span>ahmed</span> | all rights reserved !
+</div>
+
+
+<!--footer section start-->
+
+<script src="script.js"></script>
+</body>
+</html>
